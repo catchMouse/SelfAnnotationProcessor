@@ -1,0 +1,2 @@
+# SelfAnnotationProcessor
+模拟butterknife编译时注解处理

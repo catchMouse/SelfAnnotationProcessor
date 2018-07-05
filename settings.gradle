@@ -1,0 +1,1 @@
+include ':app', ':apt', ':anno'  //当前工程包含多个module

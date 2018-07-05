@@ -1,0 +1,12 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':anno')    //当前模块需要用到的注解都是anno模块定义的
+
+    implementation 'com.squareup:javapoet:1.11.1'   //生成java源文件的工具
+    implementation 'com.google.auto.service:auto-service:1.0-rc2'  //用于注册 注解处理器
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
